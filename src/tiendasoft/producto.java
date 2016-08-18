@@ -49,6 +49,7 @@ public class producto {
         cantidad = 0;
         precio = 0;
         eliminar = 1;
+        System.out.println("Producto eliminado");
     }
      public void vender(){
          int cant_vender;

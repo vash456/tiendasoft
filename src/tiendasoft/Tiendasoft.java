@@ -25,7 +25,7 @@ public class Tiendasoft {
         
         int opcion;
         int i = 0;
-        String buscar;
+        //String buscar;
         int ventastotales = 0;
         int valor_ventastot = 0;
         
@@ -47,8 +47,8 @@ public class Tiendasoft {
                     i++;
                     break;
                 case 2:
-                    //buscar(2);
-                    System.out.println("Nombre del producto a buscar");
+                    buscar(2);
+                    /*System.out.println("Nombre del producto a buscar");
                     buscar = lector2.nextLine();
                     for (int j=0;j<i;j++){
                         if (producto[j].getnombre().equals(buscar)){
@@ -57,11 +57,11 @@ public class Tiendasoft {
                         }else if (j == (i-1)){
                             System.out.println("Producto no existente");
                         }
-                    }
+                    }*/
                     break;
                 case 3:
-                    //buscar(3);
-                    System.out.println("Nombre del producto a buscar");
+                    buscar(3);
+                    /*System.out.println("Nombre del producto a buscar");
                     buscar = lector2.nextLine();
                     for (int g=0;g<i;g++){
                         if (producto[g].getnombre().equals(buscar)){
@@ -71,7 +71,7 @@ public class Tiendasoft {
                         } else if (g == (i-1)){
                             System.out.println("Producto no existente");
                         }
-                    }
+                    }*/
                     break;
                 case 4:
                     for (int k = 0;k < i;k++){
@@ -80,8 +80,8 @@ public class Tiendasoft {
                     }
                     break;
                 case 5:
-                    //buscar(5);
-                    System.out.println("Nombre del producto a buscar");
+                    buscar(5);
+                    /*System.out.println("Nombre del producto a buscar");
                     buscar = lector2.nextLine();
                     for (int y = 0;y<i;y++){
                         if (producto[y].getnombre().equals(buscar)){
@@ -92,7 +92,7 @@ public class Tiendasoft {
                         }
                             
                                 
-                    }
+                    }*/
                     break;
                 case 6:
                     for (int q = 0;q < i;q++){
@@ -114,11 +114,11 @@ public class Tiendasoft {
         }while(opcion != 7);
     }
     
-    /*public static void buscar(int num) {
+    public static void buscar(int num) {
         String buscar;
         System.out.println("Nombre del producto a buscar");
         buscar = lector2.nextLine();
-        for (int j=0;j==producto.length;j++){
+        for (int j=0;j<producto.length;j++){
             if (producto[j].getnombre().equals(buscar)){
                 if (num == 2){
                     producto[j].mostrar();
@@ -136,6 +136,6 @@ public class Tiendasoft {
                 break;
             }
         }
-    }*/
+    }
     
 }
