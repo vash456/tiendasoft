@@ -41,7 +41,7 @@ public class producto {
             System.out.println("Nombre: "+nombre);
             System.out.println("cantidad: "+cantidad);
             System.out.println("precio: "+precio);
-        }
+        }else System.out.println("Producto no existente");
     }
     
     public void eliminar(){
@@ -66,7 +66,7 @@ public class producto {
             System.out.println("Nombre: "+nombre);
             System.out.println("Ventas: "+ventas);
             System.out.println("Valor ventas: "+(ventas*precio));
-        }
+        } System.out.println("Producto no existente");
         return ventas;
      }
      

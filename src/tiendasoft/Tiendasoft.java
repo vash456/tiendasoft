@@ -50,11 +50,11 @@ public class Tiendasoft {
                     //buscar(2);
                     System.out.println("Nombre del producto a buscar");
                     buscar = lector2.nextLine();
-                    for (int j=0;j<producto.length;j++){
+                    for (int j=0;j<i;j++){
                         if (producto[j].getnombre().equals(buscar)){
                             producto[j].mostrar();
                             break;
-                        }else if (j == (producto.length-1)){
+                        }else if (j == (i-1)){
                             System.out.println("Producto no existente");
                         }
                     }
@@ -63,14 +63,13 @@ public class Tiendasoft {
                     //buscar(3);
                     System.out.println("Nombre del producto a buscar");
                     buscar = lector2.nextLine();
-                    for (int g=0;g<producto.length;g++){
+                    for (int g=0;g<i;g++){
                         if (producto[g].getnombre().equals(buscar)){
                             producto[g].eliminar();
                             i=i-1;
                             break;
-                        } else {
+                        } else if (g == (i-1)){
                             System.out.println("Producto no existente");
-                            break;
                         }
                     }
                     break;
@@ -84,12 +83,13 @@ public class Tiendasoft {
                     //buscar(5);
                     System.out.println("Nombre del producto a buscar");
                     buscar = lector2.nextLine();
-                    for (int y = 0;y<producto.length;y++){
+                    for (int y = 0;y<i;y++){
                         if (producto[y].getnombre().equals(buscar)){
                             producto[y].vender();
                             break;
+                        }else if (y == (i-1)){
+                            System.out.println("Producto no existente");
                         }
-                        System.out.println("Producto no existente");
                             
                                 
                     }
@@ -100,7 +100,7 @@ public class Tiendasoft {
                         ventastotales = ventastotales + producto[q].ventas();
                         valor_ventastot = valor_ventastot + producto[q].getvalorventas();
                     }
-                    System.out.println("Ventas Totales :"+ventastotales);
+                    System.out.println("\nVentas Totales :"+ventastotales);
                     System.out.println("Valor de Ventas Totales :"+valor_ventastot);
                     break;
                 case 7:
